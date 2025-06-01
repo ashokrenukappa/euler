@@ -109,7 +109,7 @@ public class LargestProductInAGrid {
                 System.out.println("HURRRAAAAAYYYYY");
             }
         }
-        System.out.println("Completed, time taken: "+ System.currentTimeMillis() - start +" milliseconds");
+        System.out.println("Completed, time taken: "+ (System.currentTimeMillis() - start) +" milliseconds");
 
 
 
