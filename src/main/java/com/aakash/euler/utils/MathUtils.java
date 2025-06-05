@@ -19,4 +19,27 @@ public class MathUtils {
         }
         return true;
     }
+
+    /**
+     * Counts the number of divisors of a number.
+     *
+     * @param n The number to count divisors for.
+     * @return The number of divisors.
+     */
+    public static int countDivisors(long n) {
+        if (n == 0) {
+            return 0;
+        }
+        int count = 0;
+        for (long i = 1; i * i <= n; i++) {
+            if (n % i == 0) {
+                if (i * i == n) {
+                    count++;
+                } else {
+                    count += 2;
+                }
+            }
+        }
+        return count;
+    }
 }
